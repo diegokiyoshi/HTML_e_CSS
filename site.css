@@ -1,0 +1,56 @@
+body {
+	font-family: "Crimson Text", "Times New Roman", serif; /* define a fonte utilizada no texto */
+	background-color: #F2FFFC; /* define a cor do plano de fundo do body */
+	font-size: 120%; /* define o tamanho da fonte do body */
+}
+
+h1, h2 {
+	font-family: "Open Sans Condensed", "Arial", sans-serif; /* define a fonte do H1 e H2 */
+}
+
+main h1 {
+	text-align: center; /* define o alinhamento do texto do H1 */
+	background-color: #851944; /* define a cor do plano de fundo do H1 */
+	color: #FFF; /* define a cor do H1 */
+	padding: 24px; /* define o espaçamento entre o texto do H1 com a borda da caixa background **dentro do elemento** */
+	margin: 0; /* define a margem entre a caixa background e a página */	
+	
+}
+
+p {
+	text-align: justify; /* define o alinhamento do texto dos parágrafos */
+}
+
+blockquote {
+	background-color: #D9E5E3; /* define a cor do plano de fundo do blockquote */
+	padding: 16px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
+	margin: 0; /* define a margem entre a caixa background e a página */
+	border: 10px solid #c2ccca; /* coloca a borda na caixa background do blockquote */
+	width: 250px; /* define a largura da caixa background */
+	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */
+		
+}
+
+aside {
+	background-color: #3C1D3D; /* define a cor do plano de fundo do aside */
+	color: #F2FFFC; /* define a cor do texto do aside */
+}
+
+footer {
+	background-color: #000; /* define a cor do plano de fundo do footer */
+	color: #F2FFFC; /* define a cor do texto do footer */
+}
+
+nav a {
+	color: #F2FFFC; /* define a cor do texto do nav a */
+}
+
+main a {
+	color: #851944; /* define a cor do texto do main a */
+}
+
+aside a {
+	color: inherit; /**/
+	font-family: "Open Sans Condensed", sans-serif;
+	text-decoration: none;
+}
