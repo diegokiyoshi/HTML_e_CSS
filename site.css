@@ -2,29 +2,33 @@ body {
 	font-family: "Crimson Text", "Times New Roman", serif; /* define a fonte utilizada no texto */
 	background-color: #F2FFFC; /* define a cor do plano de fundo do body */
 	font-size: 120%; /* define o tamanho da fonte do body */
+	line-height: 1.5; /* define o espaçamento entre as linhas */
 }
 
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif; /* define a fonte do H1 e H2 */
+	font-size: 30px; /* define o tamanho da fonte dos h1 e h2 */
 }
 
 main h1 {
 	text-align: center; /* define o alinhamento do texto do H1 */
 	background-color: #851944; /* define a cor do plano de fundo do H1 */
 	color: #FFF; /* define a cor do H1 */
-	padding: 24px; /* define o espaçamento entre o texto do H1 com a borda da caixa background **dentro do elemento** */
-	margin: 0; /* define a margem entre a caixa background e a página */	
-	
+	padding: 25px; /* define o espaçamento entre o texto do H1 com a borda da caixa background (dentro do elemento) */
+	margin: 0; /* define a margem entre a caixa background e a página */
+	border-bottom: 10px solid #000000; /* define a borda inferior para o H1 */
+	font-size: 60px; /* define o tamanho da fonte do main h1 */
 }
 
 p {
 	text-align: justify; /* define o alinhamento do texto dos parágrafos */
+	margin: 20px 0; /* define um espaço ao redor dos parágrafos */
 }
 
 blockquote {
 	background-color: #D9E5E3; /* define a cor do plano de fundo do blockquote */
-	padding: 16px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
-	margin: 0; /* define a margem entre a caixa background e a página */
+	padding: 20px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
+	margin: 20px 40px; /* define a margem entre a caixa background e a página */
 	border: 10px solid #c2ccca; /* coloca a borda na caixa background do blockquote */
 	width: 250px; /* define a largura da caixa background */
 	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */
@@ -34,11 +38,15 @@ blockquote {
 aside {
 	background-color: #3C1D3D; /* define a cor do plano de fundo do aside */
 	color: #F2FFFC; /* define a cor do texto do aside */
+	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */
+	text-align: center; /* define o alinhamento do texto */
+	
 }
 
 footer {
 	background-color: #000; /* define a cor do plano de fundo do footer */
 	color: #F2FFFC; /* define a cor do texto do footer */
+	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */ 
 }
 
 nav a {
@@ -49,8 +57,34 @@ main a {
 	color: #851944; /* define a cor do texto do main a */
 }
 
+main div {
+	width: 720px; /* define a largura da main div */
+	margin-left: auto; /* define o valor da margem esquerda da página */
+	margin-right: auto; /* define o valor da margem direita da página */
+	padding: 30px 0; /* define o espaço interno de todo o texto */
+	
+}
+
 aside a {
-	color: inherit; /**/
-	font-family: "Open Sans Condensed", sans-serif;
-	text-decoration: none;
+	color: inherit; /* herda a cor da classe Mãe */
+	font-family: "Open Sans Condensed", sans-serif; /* define a fonte do aside a */
+	text-decoration: none; /* define como será a parte sublinhada do aside a (no caso, os links ficarão sem sublinhar) */
+	
+}
+
+nav ul{
+	list-style-type: none /* define o estilo de marcação das listas */
+}
+
+aside h1 {
+	font-size: 30px; /* define o tamanho da fonte do aside h1 */
+	margin-bottom: 25px; /* define a margem inferior do aside h1 */
+}
+
+strong {
+	font-weight: bold; /* define que as frases dentro da tag <strong>, ficarão em negrito */
+}
+
+em {
+	font-style: italic; /* define que as frases dentro da tag <em>, ficarão em itálico */
 }
