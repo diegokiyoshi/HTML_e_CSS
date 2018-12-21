@@ -1,3 +1,4 @@
+
 body {
 	font-family: "Crimson Text", "Times New Roman", serif; /* define a fonte utilizada no texto */
 	background-color: #F2FFFC; /* define a cor do plano de fundo do body */
@@ -10,7 +11,7 @@ h1, h2 {
 	font-size: 30px; /* define o tamanho da fonte dos h1 e h2 */
 }
 
-main h1 {
+.titulo-principal {
 	text-align: center; /* define o alinhamento do texto do H1 */
 	background-color: #851944; /* define a cor do plano de fundo do H1 */
 	color: #FFF; /* define a cor do H1 */
@@ -18,6 +19,7 @@ main h1 {
 	margin: 0; /* define a margem entre a caixa background e a página */
 	border-bottom: 10px solid #000000; /* define a borda inferior para o H1 */
 	font-size: 60px; /* define o tamanho da fonte do main h1 */
+	text-transform: uppercase;
 }
 
 p {
@@ -25,58 +27,140 @@ p {
 	margin: 20px 0; /* define um espaço ao redor dos parágrafos */
 }
 
-blockquote {
+.citacao {
 	background-color: #D9E5E3; /* define a cor do plano de fundo do blockquote */
 	padding: 20px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
 	margin: 20px 40px; /* define a margem entre a caixa background e a página */
 	border: 10px solid #c2ccca; /* coloca a borda na caixa background do blockquote */
 	width: 250px; /* define a largura da caixa background */
-	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */
-		
+/*	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */	
 }
 
-aside {
-	background-color: #3C1D3D; /* define a cor do plano de fundo do aside */
-	color: #F2FFFC; /* define a cor do texto do aside */
-	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */
-	text-align: center; /* define o alinhamento do texto */
-	
+.right {
+	float: right;
 }
+
+.left {
+	float: left;
+}
+
+h2 {
+	clear: both;
+}
+
+
 
 footer {
 	background-color: #000; /* define a cor do plano de fundo do footer */
 	color: #F2FFFC; /* define a cor do texto do footer */
-	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */ 
+	padding: 0px; /* define o espaçamento entre o texto e a borda da caixa background */ 
+	clear: both;
+}
+
+.tags-preta {
+	color: #000000; /* para deixar a palavra Tags na cor preta */
+}
+
+.background-branco {
+	background-color: #F2FFFC; /* para definir  */
+}
+
+article {
+    padding-bottom: 30px; /* espaçamento do texto e a parte inferior da caixa background */
+    border-bottom: 1px solid #ccc; /* borda inferior do article */
+    margin-bottom: 20px; /* margem inferior */
+		width: 500px; /* largura do elemento article */
 }
 
 nav a {
 	color: #F2FFFC; /* define a cor do texto do nav a */
 }
 
+main {
+	width: 85%;
+	float: left;
+}
+
 main a {
 	color: #851944; /* define a cor do texto do main a */
 }
 
-main div {
+.texto-principal {
 	width: 720px; /* define a largura da main div */
 	margin-left: auto; /* define o valor da margem esquerda da página */
 	margin-right: auto; /* define o valor da margem direita da página */
 	padding: 30px 0; /* define o espaço interno de todo o texto */
-	
+}
+
+.minha-foto, .navegacao-site {
+	width: 15%;
+	float: right;
+	border-bottom: 10px solid #000000;
+	border-left: 10px solid #000000;
+	box-sizing: border-box;
+}
+
+.navegacao-site {
+	background-color: #3C1D3D; /* define a cor do plano de fundo do aside */
+	color: #F2FFFC; /* define a cor do texto do aside */
+	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */
+	text-align: center; /* define o alinhamento do texto */
+	clear: right;
+	box-sizing: border-box;
+	position: absolute;
+	top: 300px;
+	right: 0;
+	width: 250px;
+}
+
+.minha-foto {
+	position: absolute;
+	width: 300px;
+	top: 0;
+	right: 0;
 }
 
 aside a {
 	color: inherit; /* herda a cor da classe Mãe */
 	font-family: "Open Sans Condensed", sans-serif; /* define a fonte do aside a */
 	text-decoration: none; /* define como será a parte sublinhada do aside a (no caso, os links ficarão sem sublinhar) */
-	
 }
 
-nav ul{
-	list-style-type: none /* define o estilo de marcação das listas */
+aside li{
+	list-style-type: none; /* define o estilo de marcação das listas */
 }
 
-aside h1 {
+.redes-sociais li{
+	display: inline-block; /* O valor inline-block para a propriedade display surgiu para podermos definir altura e largura em elementos inline. Fora isso, ambos os elementos podem ter um padding definido, ambos ficam em linha e ambos são suportados por todos os navegadores modernos. */
+}
+
+.redes-sociais a {
+	display: inline-block; /* O valor inline-block para a propriedade display surgiu para podermos definir altura e largura em elementos inline. Fora isso, ambos os elementos podem ter um padding definido, ambos ficam em linha e ambos são suportados por todos os navegadores modernos. */
+	height: 40px; /* Define a altura dos elementos de imagem que estão na tag a */
+	width: 40px; /* Define a largura dos elementos de imagem que estão na tag a */
+	text-indent: -9999px; /* Permite regular o recuo da primeira linha de um parágrafo. Image replacement (substituir texto por imagem) */
+	text-transform: lowercase;
+}
+
+.github { /* classe que define a imagem do logotipo do Github */
+	background-image: url(github.png); /* define a imagem a ser colocada na página */
+}
+
+.linkedin { /* classe que define a imagem do logotipo do Linkedin */
+	background-image: url(linkedin.png); /* define a imagem a ser colocada na página */
+}
+
+.twitter { /* classe que define a imagem do logotipo do Twitter */
+	background-image: url(twitter.png); /* define a imagem a ser colocada na página */
+}
+
+.social-rodape {	/* classe para deixar os ícones de redes sociais ao lado do copyright João da Silva */
+	display: flex; 
+	align-items: center;
+}
+
+
+nav h1 {
 	font-size: 30px; /* define o tamanho da fonte do aside h1 */
 	margin-bottom: 25px; /* define a margem inferior do aside h1 */
 }
@@ -87,4 +171,13 @@ strong {
 
 em {
 	font-style: italic; /* define que as frases dentro da tag <em>, ficarão em itálico */
+}
+
+.leia-mais {
+	font-size: 20px; /* define o tamanho da fonte */
+	margin: 16px; /* define a margem entre a caixa background e a margem da página */
+	padding: 30px; /*define a distância entre o texto e a borda da caixa background*/
+	display: block; /* define o modo de exibição do elemento */
+	text-align: center; /* define o alinhamento do texto */
+	background-color: #E6E7E8; /* define a cor da caixa background */
 }
