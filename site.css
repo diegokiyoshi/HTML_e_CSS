@@ -27,49 +27,15 @@ p {
 	margin: 20px 0; /* define um espaço ao redor dos parágrafos */
 }
 
-.citacao {
-	background-color: #D9E5E3; /* define a cor do plano de fundo do blockquote */
-	padding: 20px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
-	margin: 20px 40px; /* define a margem entre a caixa background e a página */
-	border: 10px solid #c2ccca; /* coloca a borda na caixa background do blockquote */
-	width: 250px; /* define a largura da caixa background */
-/*	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */	
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
 h2 {
 	clear: both;
 }
 
-
-
 footer {
 	background-color: #000; /* define a cor do plano de fundo do footer */
 	color: #F2FFFC; /* define a cor do texto do footer */
-	padding: 0px; /* define o espaçamento entre o texto e a borda da caixa background */ 
+	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */ 
 	clear: both;
-}
-
-.tags-preta {
-	color: #000000; /* para deixar a palavra Tags na cor preta */
-}
-
-.background-branco {
-	background-color: #F2FFFC; /* para definir  */
-}
-
-article {
-    padding-bottom: 30px; /* espaçamento do texto e a parte inferior da caixa background */
-    border-bottom: 1px solid #ccc; /* borda inferior do article */
-    margin-bottom: 20px; /* margem inferior */
-		width: 500px; /* largura do elemento article */
 }
 
 nav a {
@@ -94,10 +60,10 @@ main a {
 
 .minha-foto, .navegacao-site {
 	width: 15%;
-	float: right;
-	border-bottom: 10px solid #000000;
-	border-left: 10px solid #000000;
-	box-sizing: border-box;
+	float: right; 
+	border-bottom: 10px solid #000000; /* borda inferior */ 
+ 	border-left: 10px solid #000000; /* borda esquerda */
+	box-sizing: border-box; /* define que a caixa background deve ter o tamanho definido width */
 }
 
 .navegacao-site {
@@ -105,19 +71,19 @@ main a {
 	color: #F2FFFC; /* define a cor do texto do aside */
 	padding: 20px; /* define o espaçamento entre o texto e a borda da caixa background */
 	text-align: center; /* define o alinhamento do texto */
-	clear: right;
-	box-sizing: border-box;
-	position: absolute;
-	top: 300px;
-	right: 0;
-	width: 250px;
+	clear: right; /* utilizado para não haver nenhum elemento ao lado, ou seja, no nosso caso, não poderá haver nenhum elemento no lado direito */
+	box-sizing: border-box; /* define que a caixa background deve ter o tamanho definido width */
+	position: absolute; /* posicionamento absoluto define que não importam as medidas da página, o elemento será posicionado onde for definido */
+	top: 270px; /* define que o elemento esteja a 270px do topo */
+	right: 0; /* define que o elemento esteja a 0px da direita */
+	width: 240px; /* define a largura do elemento */
 }
 
 .minha-foto {
-	position: absolute;
-	width: 300px;
-	top: 0;
-	right: 0;
+	position: absolute; /* posicionamento absoluto define que não importam as medidas da página, o elemento será posicionado onde for definido */
+	width: 270px; /* define a largura do elemento */
+	top: 0; /* define que o elemento ficará a 0px do topo */
+	right: 0; /* define que o elemento ficará a 0px da direita */
 }
 
 aside a {
@@ -139,19 +105,19 @@ aside li{
 	height: 40px; /* Define a altura dos elementos de imagem que estão na tag a */
 	width: 40px; /* Define a largura dos elementos de imagem que estão na tag a */
 	text-indent: -9999px; /* Permite regular o recuo da primeira linha de um parágrafo. Image replacement (substituir texto por imagem) */
-	text-transform: lowercase;
+	text-transform: lowercase; /* transforma o texto com todos os caractéres em minúsculo */
 }
 
 .github { /* classe que define a imagem do logotipo do Github */
-	background-image: url(github.png); /* define a imagem a ser colocada na página */
+	background-image: url(../img/github.png); /* define a imagem a ser colocada na página */
 }
 
 .linkedin { /* classe que define a imagem do logotipo do Linkedin */
-	background-image: url(linkedin.png); /* define a imagem a ser colocada na página */
+	background-image: url(../img/linkedin.png); /* define a imagem a ser colocada na página */
 }
 
 .twitter { /* classe que define a imagem do logotipo do Twitter */
-	background-image: url(twitter.png); /* define a imagem a ser colocada na página */
+	background-image: url(../img/twitter.png); /* define a imagem a ser colocada na página */
 }
 
 .social-rodape {	/* classe para deixar os ícones de redes sociais ao lado do copyright João da Silva */
@@ -159,25 +125,8 @@ aside li{
 	align-items: center;
 }
 
-
 nav h1 {
 	font-size: 30px; /* define o tamanho da fonte do aside h1 */
 	margin-bottom: 25px; /* define a margem inferior do aside h1 */
 }
 
-strong {
-	font-weight: bold; /* define que as frases dentro da tag <strong>, ficarão em negrito */
-}
-
-em {
-	font-style: italic; /* define que as frases dentro da tag <em>, ficarão em itálico */
-}
-
-.leia-mais {
-	font-size: 20px; /* define o tamanho da fonte */
-	margin: 16px; /* define a margem entre a caixa background e a margem da página */
-	padding: 30px; /*define a distância entre o texto e a borda da caixa background*/
-	display: block; /* define o modo de exibição do elemento */
-	text-align: center; /* define o alinhamento do texto */
-	background-color: #E6E7E8; /* define a cor da caixa background */
-}

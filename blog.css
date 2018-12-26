@@ -1,0 +1,23 @@
+.leia-mais {
+	font-size: 20px; /* define o tamanho da fonte */
+	margin: 16px; /* define a margem entre a caixa background e a margem da página */
+	padding: 8px; /*define a distância entre o texto e a borda da caixa background*/
+	display: block; /* define o modo de exibição do elemento */
+	text-align: center; /* define o alinhamento do texto */
+	background-color: #E6E7E8; /* define a cor da caixa background */
+}
+
+.tags-preta {
+	color: #000000; /* para deixar a palavra Tags na cor preta */
+}
+
+article {
+    padding-bottom: 30px; /* espaçamento do texto e a parte inferior da caixa background */
+    border-bottom: 1px solid #ccc; /* borda inferior do article */
+    margin-bottom: 20px; /* margem inferior */
+		width: 500px; /* largura do elemento article */
+}
+
+.background-branco {
+	background-color: #F2FFFC; /* para definir  */
+}

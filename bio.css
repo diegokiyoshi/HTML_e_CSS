@@ -1,0 +1,29 @@
+.citacao {
+	background-color: #D9E5E3; /* define a cor do plano de fundo do blockquote */
+	padding: 20px; /* define o espaçamento entre o texto do blockquote com a borda da caixa background **dentro do elemento */
+	margin: 20px 40px; /* define a margem entre a caixa background e a página */
+	border: 10px solid #c2ccca; /* coloca a borda na caixa background do blockquote */
+	width: 250px; /* define a largura da caixa background */
+	box-sizing: border-box; /* sem a propriedade box-sizing, o width define que o conteúdo(texto) da caixa background tenha 250px, aumentando o tamanho da caixa background, qdo colocamos essa propriedade, definimos que a caixa background tem obrigatoriamente 250px */	
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+strong {
+	font-weight: bold; /* define que as frases dentro da tag <strong>, ficarão em negrito */
+}
+
+em {
+	font-style: italic; /* define que as frases dentro da tag <em>, ficarão em itálico */
+}
+
+cite {
+	font-style: italic;
+	float: right;
+}
