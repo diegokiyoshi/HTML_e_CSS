@@ -125,6 +125,10 @@ aside li{
 	align-items: center;
 }
 
+.social-rodape ul {
+	margin-left: 15px;
+}
+
 nav h1 {
 	font-size: 30px; /* define o tamanho da fonte do aside h1 */
 	margin-bottom: 25px; /* define a margem inferior do aside h1 */
